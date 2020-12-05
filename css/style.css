@@ -199,6 +199,7 @@ h6 {
     height: 52px;
     margin-right: 30px;
 }
+
 .main-form_btm {
     display: flex;
     width: 100%;
@@ -291,4 +292,195 @@ h6 {
 .section3-img {
     display: flex;
     justify-content: space-between;
+}
+.textblok-mark {
+    display: flex;
+    margin-bottom: 30px;
+}
+.section5 {
+    margin-bottom: 213px;
+}
+.section5_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section5-textblok {
+    width: 450px;
+}
+.textblok-discription {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 40px;
+}
+.user-name {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 48px;
+}
+.user-tex {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 48px;
+}
+.section5-img {
+    width: 384px;
+    height: 491px;
+}
+/* Оценка звезды */
+.rating-area {
+    overflow: hidden;
+}
+.rating-area:not(:checked) > input {
+    display: none;
+}
+.rating-area:not(:checked) > label {
+    float: right;
+    letter-spacing: 15px;
+    padding: 0;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 32px;
+    color: lightgrey;
+}
+.rating-area:not(:checked) > label:before {
+    content: "★";
+}
+.rating-area > input:checked ~ label {
+    color: gold;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+    color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+    color: gold;
+}
+.rate-area > label:active {
+    position: relative;
+}
+.section6 {
+    height: 684px;
+}
+.section6-story {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section6-story-card {
+    display: flex;
+    flex-direction: column;
+
+    width: 266px;
+    height: 446px;
+}
+.card-img {
+    overflow: hidden;
+    width: 261px;
+    height: 231px;
+    border-radius: 10px;
+}
+.card-title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 30px;
+    margin: 13px 0px;
+}
+.card-text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    color: #7d7987;
+    mix-blend-mode: normal;
+    flex-grow: 1;
+}
+.card-text a {
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 482px;
+    background: #f9f9fb;
+}
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 75px 0px;
+}
+.footer-block1 {
+    width: 391px;
+    height: 237px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+
+    color: #848484;
+    mix-blend-mode: normal;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 249px;
+    margin-left: 155px;
+}
+.footer-block_title {
+    margin-bottom: 33px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 60px;
+    color: #000000;
+}
+.footer-block_link {
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+}
+.footer-block_link a {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 38px;
+    color: #848484;
+    mix-blend-mode: normal;
+}
+.footer-block_link a:hover {
+    text-decoration: underline;
+}
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px;
+}
+.footer-link a {
+    margin: 0px 35px;
 }
